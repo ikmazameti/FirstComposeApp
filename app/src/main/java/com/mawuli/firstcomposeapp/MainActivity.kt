@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -62,14 +63,17 @@ fun HelloStudents() {
     ) {
 
         Image(
-            painter = painterResource(id = R.drawable.compose_logo),
+            painter = painterResource(id = R.drawable.ic_water_damage),
             contentDescription = "Android logo",
             modifier = Modifier
-                .size(200.dp)
-                .clip(shape = RoundedCornerShape(topStart = 50.dp, topEnd = 50.dp) )
 
+                .clip(shape = RoundedCornerShape(topStart = 50.dp, topEnd = 50.dp))
+        )
 
-
+        Icon(
+            painter = painterResource(id = R.drawable.ic_water_damage),
+            contentDescription = "test",
+            tint = Color.Magenta
         )
 
 
